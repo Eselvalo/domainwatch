@@ -918,6 +918,7 @@ footer {
 @media (max-width: 600px) {
   .hero {
     text-align: center;
+    padding: 6rem 1.5rem 4rem;
   }
   .hero-mockup {
     margin-top: 2rem;
