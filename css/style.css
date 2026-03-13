@@ -19,6 +19,7 @@ body {
   line-height: 1.6;
   background-color: var(--bg-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 /* Variables */
@@ -37,6 +38,11 @@ body {
   --max-width: 1200px;
   --section-padding: 6rem 1.5rem;
   --gap: 2rem;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Utility classes */
@@ -143,11 +149,18 @@ header {
 /* Hero Section */
 .hero {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   align-items: center;
   gap: var(--gap);
-  padding: 6rem 40rem 4rem;
+  padding: 6rem 1.5rem 4rem;
   background: linear-gradient(135deg, #eef2ff 0%, #fdfdfe 100%);
+}
+.hero-content {
+  max-width: 520px;
+}
+
+.hero-mockup {
+  max-width: 520px;
 }
 
 .hero-content h1 {
@@ -887,10 +900,12 @@ footer {
 
 /* Responsive nav */
 @media (max-width: 768px) {
+
   .navbar nav {
     position: fixed;
     top: 70px;
-    right: -100%;
+    right: 0;
+    transform: translateX(100%);
     width: 70%;
     height: calc(100% - 70px);
     background-color: var(--surface-color);
@@ -899,20 +914,25 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    transition: right var(--transition);
+    transition: transform var(--transition);
   }
+
   .navbar nav.active {
-    right: 0;
+    transform: translateX(0);
   }
+
   .navbar .menu-toggle {
     display: block;
   }
+
   .navbar nav ul {
     flex-direction: column;
   }
+
   .navbar .actions {
     display: none;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -1049,6 +1069,28 @@ footer {
       radial-gradient(circle at 20% 20%, rgba(139,130,255,.18), transparent 40%),
       radial-gradient(circle at 85% 10%, rgba(255,200,80,.12), transparent 35%),
       linear-gradient(135deg,#0b1020 0%,#0f1729 100%);
+  }
+
+}
+@media (min-width: 1200px) {
+
+  .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  body {
+    scroll-snap-type: y mandatory;
+  }
+
+  section {
+    scroll-snap-align: start;
+    min-height: 100vh;
   }
 
 }
