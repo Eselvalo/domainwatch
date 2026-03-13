@@ -985,11 +985,12 @@ footer {
   }
 
   /* hero gradient */
-  .hero {
-    background:
-      radial-gradient(circle at top left, rgba(139,130,255,.15), transparent 35%),
-      linear-gradient(135deg,#0b1020 0%,#0f1729 100%);
-  }
+.hero {
+background:
+radial-gradient(circle at 20% 30%, rgba(139,130,255,.25), transparent 45%),
+radial-gradient(circle at 80% 20%, rgba(255,200,80,.12), transparent 40%),
+linear-gradient(180deg,#0b1020 0%,#0f1729 60%,#0b1020 100%);
+}
 
   /* cards / panels */
   .feature-card,
@@ -1072,15 +1073,14 @@ footer {
   }
 
   /* hero section slightly richer */
-.hero {
-  display: flex;
-  justify-content: center;
-  padding: 6rem 1.5rem 4rem;
-  background:
-    radial-gradient(circle at 20% 30%, rgba(109,99,255,.18), transparent 45%),
-    radial-gradient(circle at 85% 20%, rgba(255,200,80,.12), transparent 40%),
-    linear-gradient(135deg,#eef2ff 0%,#f9fbff 40%,#fdfdfe 100%);
-}
+.hero { 
+  background: radial-gradient(circle at 20% 20%,
+  rgba(139,130,255,.18),
+  transparent 40%), 
+  radial-gradient(circle at 85% 10%, rgba(255,200,80,.12),transparent 35%),
+  linear-gradient(135deg,#0b1020 0%,#0f1729 100%); 
+  }
+  
 
 }
 
