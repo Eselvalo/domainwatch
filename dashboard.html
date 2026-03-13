@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Demo – DomainWatch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar container">
+      <div class="logo"><a href="index.html">DomainWatch</a></div>
+      <nav>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a href="#" class="btn btn-secondary">Login</a>
+        <a href="contact.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Dashboard Section -->
+  <section class="dashboard">
+    <div class="dashboard-top">
+      <h2 style="color: var(--primary-color); font-size: 2rem;">Domain Health Dashboard</h2>
+      <div class="dashboard-filter">
+        <select name="portfolio">
+          <option value="all">All Portfolios</option>
+          <option value="acme">Acme Agency</option>
+          <option value="msp">MSP Solutions</option>
+          <option value="webstudio">WebStudio Pro</option>
+        </select>
+        <select name="status">
+          <option value="all">All Statuses</option>
+          <option value="ok">Healthy</option>
+          <option value="warn">Warnings</option>
+          <option value="critical">Critical</option>
+        </select>
+      </div>
+    </div>
+    <div class="dashboard-grid">
+      <div class="domain-card reveal">
+        <h4>example.com</h4>
+        <div class="health">
+          <span class="ok">DNS OK</span>
+          <span class="ok">SSL OK</span>
+          <span class="ok">Email OK</span>
+        </div>
+        <p>Expiry: 45 days</p>
+        <div class="actions">
+          <a href="#" class="btn btn-secondary" style="font-size:0.8rem; padding:0.3rem 0.5rem;">Details</a>
+        </div>
+      </div>
+      <div class="domain-card reveal">
+        <h4>myagency.io</h4>
+        <div class="health">
+          <span class="warn">DNS Warn</span>
+          <span class="ok">SSL OK</span>
+          <span class="ok">Email OK</span>
+        </div>
+        <p>Expiry: 7 days</p>
+        <div class="actions">
+          <a href="#" class="btn btn-secondary" style="font-size:0.8rem; padding:0.3rem 0.5rem;">Details</a>
+        </div>
+      </div>
+      <div class="domain-card reveal">
+        <h4>clientsite.org</h4>
+        <div class="health">
+          <span class="error">DNS Down</span>
+          <span class="warn">SSL Expiring</span>
+          <span class="ok">Email OK</span>
+        </div>
+        <p>Expiry: 22 days</p>
+        <div class="actions">
+          <a href="#" class="btn btn-secondary" style="font-size:0.8rem; padding:0.3rem 0.5rem;">Details</a>
+        </div>
+      </div>
+      <div class="domain-card reveal">
+        <h4>coolproject.net</h4>
+        <div class="health">
+          <span class="ok">DNS OK</span>
+          <span class="ok">SSL OK</span>
+          <span class="warn">Email Warn</span>
+        </div>
+        <p>Expiry: 88 days</p>
+        <div class="actions">
+          <a href="#" class="btn btn-secondary" style="font-size:0.8rem; padding:0.3rem 0.5rem;">Details</a>
+        </div>
+      </div>
+      <div class="domain-card reveal">
+        <h4>anotherapp.com</h4>
+        <div class="health">
+          <span class="ok">DNS OK</span>
+          <span class="warn">SSL Expiring</span>
+          <span class="ok">Email OK</span>
+        </div>
+        <p>Expiry: 13 days</p>
+        <div class="actions">
+          <a href="#" class="btn btn-secondary" style="font-size:0.8rem; padding:0.3rem 0.5rem;">Details</a>
+        </div>
+      </div>
+      <div class="domain-card reveal">
+        <h4>msp-host.net</h4>
+        <div class="health">
+          <span class="ok">DNS OK</span>
+          <span class="ok">SSL OK</span>
+          <span class="ok">Email OK</span>
+        </div>
+        <p>Expiry: 110 days</p>
+        <div class="actions">
+          <a href="#" class="btn btn-secondary" style="font-size:0.8rem; padding:0.3rem 0.5rem;">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Timeline / Recent Events -->
+    <div style="margin-top:4rem;">
+      <h3 style="font-size:1.5rem; color: var(--primary-color); margin-bottom:1rem;">Recent Activity</h3>
+      <div class="timeline-list">
+        <div class="timeline-item reveal">
+          <div class="timestamp">Today 10:24 AM</div>
+          <h3>DNS record changed: clientsite.org</h3>
+          <p>A record updated to 203.0.113.12</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timestamp">Yesterday 16:02</div>
+          <h3>SSL expiring: anotherapp.com</h3>
+          <p>Certificate will expire in 13 days.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timestamp">2 days ago</div>
+          <h3>DMARC failure: myagency.io</h3>
+          <p>Authentication failed for message from marketing@myagency.io</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="dashboard.html">Demo</a></li>
+          <li><a href="docs.html">Docs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: support@domainwatch.io</li>
+          <li>Address: Tallinn, Estonia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 DomainWatch. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

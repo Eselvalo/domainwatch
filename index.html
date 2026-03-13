@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DomainWatch – Monitor Your Clients' Domains</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="navbar container">
+      <div class="logo"><a href="index.html">DomainWatch</a></div>
+      <nav>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a href="#" class="btn btn-secondary">Login</a>
+        <a href="contact.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content reveal">
+      <h1>Monitor and protect your clients' domains</h1>
+      <p>DomainWatch lets agencies and MSPs monitor DNS, SSL, email and website issues for all their client portfolios — so you can prevent incidents before they happen.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary">Start Monitoring</a>
+        <a href="dashboard.html" class="btn btn-secondary">See Demo</a>
+      </div>
+    </div>
+    <div class="hero-mockup reveal">
+      <div class="mockup-header">
+        <span class="title">Domain Portfolio</span>
+        <span class="title">Client: Acme Agency</span>
+      </div>
+      <table class="mockup-table">
+        <thead>
+          <tr><th>Domain</th><th>Status</th><th>Expiry</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>example.com</td><td><span class="status-badge status-ok"></span>OK</td><td>45d</td></tr>
+          <tr><td>myagency.io</td><td><span class="status-badge status-warn"></span>Warn</td><td>7d</td></tr>
+          <tr><td>clientsite.org</td><td><span class="status-badge status-error"></span>Down</td><td>22d</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Trust Strip -->
+  <section class="trust-strip">
+    <div class="logos container">
+      <span>Trusted by 500+ agencies</span>
+      <span>Acme Cloud</span>
+      <span>WebStudio Pro</span>
+      <span>MSP Solutions</span>
+      <span>SkyNet Labs</span>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="features">
+    <div class="container">
+      <h2 class="text-center reveal">Everything you need to keep domains healthy</h2>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="icon">🧭</div>
+          <h3>DNS Change Monitoring</h3>
+          <p>Detect unauthorized DNS changes and nameserver updates instantly to avoid service disruptions.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon">🔐</div>
+          <h3>SSL/TLS Expiry Alerts</h3>
+          <p>Never let a certificate lapse. We check expiry dates and notify you before downtime happens.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon">📮</div>
+          <h3>SPF, DKIM &amp; DMARC</h3>
+          <p>Validate email authentication records to ensure your clients' emails land in inboxes, not spam.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon">🌐</div>
+          <h3>Website &amp; Redirect Checks</h3>
+          <p>Monitor website reachability, HTTP statuses, redirect loops and ensure user experience stays intact.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon">⏱</div>
+          <h3>Domain Expiry Notices</h3>
+          <p>Track domain expiration dates and get renew reminders before they vanish from registries.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon">📊</div>
+          <h3>Portfolio &amp; Reporting</h3>
+          <p>Organize domains by client, tag them and generate white‑label reports that clients will love.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Section -->
+  <section class="showcase">
+    <div class="showcase-img reveal">
+      <div class="large-mockup">
+        <div class="large-card">Status Overview: <br>All 86 domains healthy, 2 warnings, 1 critical.</div>
+        <div class="large-card">Recent Activity: <br>SSL renewed for acme-agency.com.<br> DNS change detected on msp-host.net.</div>
+        <div class="large-card">Upcoming Expiries: <br>myagency.io (7d), clientsite.org (22d)</div>
+      </div>
+    </div>
+    <div class="showcase-content reveal">
+      <h2>Unified domain health dashboard</h2>
+      <p>See all domain metrics in one place with at‑a‑glance statuses, change history and actionable insights.</p>
+      <ul>
+        <li>Monitor domain, DNS, SSL and email in one panel</li>
+        <li>Group domains by client or tag</li>
+        <li>Drill down to see timeline of events</li>
+      </ul>
+      <a href="dashboard.html" class="btn btn-primary">Explore Dashboard</a>
+    </div>
+  </section>
+
+  <!-- Agency Section -->
+  <section class="agency">
+    <h2 class="reveal">Built for agencies &amp; MSPs</h2>
+    <div class="container cards">
+      <div class="agency-card reveal">
+        <h3>Client portfolios</h3>
+        <p>Create separate portfolios for each client, assign tags and manage with ease.</p>
+      </div>
+      <div class="agency-card reveal">
+        <h3>White‑label reports</h3>
+        <p>Send branded weekly reports that show domain health metrics and improvements.</p>
+      </div>
+      <div class="agency-card reveal">
+        <h3>Multi‑user access</h3>
+        <p>Invite teammates and clients with granular permissions and notifications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline / Alerts Section -->
+  <section class="timeline">
+    <h2 class="reveal">Stay ahead with actionable alerts</h2>
+    <div class="timeline-list">
+      <div class="timeline-item reveal">
+        <div class="timestamp">10:24 AM</div>
+        <h3>DNS A record changed for example.com</h3>
+        <p>New IP address detected: 192.0.2.45</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timestamp">Yesterday</div>
+        <h3>SSL certificate renewed for acme-agency.com</h3>
+        <p>Certificate valid until 2027-03-15</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timestamp">3 days ago</div>
+        <h3>DMARC fail for clientsite.org</h3>
+        <p>From: random@clientsite.org flagged as spoofed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reporting Section -->
+  <section class="reporting">
+    <h2 class="reveal">Automated reports &amp; digests</h2>
+    <div class="report-grid">
+      <div class="report-card reveal">
+        <h3>Weekly Digest</h3>
+        <p>A summary of all domain events and statuses delivered to your inbox.</p>
+        <div class="report-visual"></div>
+      </div>
+      <div class="report-card reveal">
+        <h3>Client Snapshot</h3>
+        <p>Generate a shareable PDF that your clients can understand at a glance.</p>
+        <div class="report-visual"></div>
+      </div>
+      <div class="report-card reveal">
+        <h3>History &amp; Audit</h3>
+        <p>Access a timeline of changes for every domain to streamline troubleshooting.</p>
+        <div class="report-visual"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Preview Section -->
+  <section class="pricing-preview">
+    <h2 class="reveal">Simple pricing for every team</h2>
+    <div class="pricing-cards">
+      <div class="pricing-card reveal">
+        <h3>Starter</h3>
+        <div class="price">$9<span class="price-period">/mo</span></div>
+        <ul>
+          <li>Monitor up to 25 domains</li>
+          <li>Email alerts</li>
+          <li>Basic reporting</li>
+        </ul>
+        <a href="pricing.html" class="btn btn-primary">Choose Plan</a>
+      </div>
+      <div class="pricing-card highlight reveal">
+        <h3>Professional</h3>
+        <div class="price">$29<span class="price-period">/mo</span></div>
+        <ul>
+          <li>Up to 100 domains</li>
+          <li>Slack &amp; webhook notifications</li>
+          <li>White‑label reports</li>
+          <li>All starter features</li>
+        </ul>
+        <a href="pricing.html" class="btn btn-primary">Most Popular</a>
+      </div>
+      <div class="pricing-card reveal">
+        <h3>Agency</h3>
+        <div class="price">$79<span class="price-period">/mo</span></div>
+        <ul>
+          <li>Unlimited domains</li>
+          <li>Multi‑client management</li>
+          <li>Custom SLA &amp; priority support</li>
+          <li>All professional features</li>
+        </ul>
+        <a href="pricing.html" class="btn btn-primary">Choose Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2 class="reveal">Frequently asked questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">How does DomainWatch detect changes?</div>
+        <div class="faq-answer">We poll DNS, WHOIS, SSL and HTTP endpoints at frequent intervals using industry‑standard tools and compare the results with your defined baseline. When a change is detected, you'll receive an alert via your preferred channel.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Can I group domains by client?</div>
+        <div class="faq-answer">Yes. You can create portfolios for each client, tag domains and invite collaborators. Each portfolio has its own reports and notification settings.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Do you offer white‑label reporting?</div>
+        <div class="faq-answer">Our Professional and Agency plans include fully customizable, white‑label PDF reports that you can share with your clients. Upload your logo and choose which metrics to include.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <h2>Ready to safeguard your domains?</h2>
+    <p>Get started with a free trial and experience peace of mind today.</p>
+    <a href="contact.html" class="btn btn-primary">Start your free trial</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="dashboard.html">Demo</a></li>
+          <li><a href="docs.html">Docs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: support@domainwatch.io</li>
+          <li>Address: Tallinn, Estonia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 DomainWatch. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
