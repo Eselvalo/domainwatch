@@ -930,3 +930,125 @@ footer {
     order: 1;
   }
 }
+/* ================================
+   System Dark Mode
+   ================================ */
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+
+    /* main surfaces */
+    --bg-color: #0b1020;
+    --surface-color: #11182b;
+    --border-color: #23304a;
+
+    /* text */
+    --text-color: #e7ecf7;
+    --muted-color: #94a3b8;
+
+    /* brand slightly brighter for dark surfaces */
+    --primary-color: #8b82ff;
+    --secondary-color: #a29bff;
+
+    /* shadows adjusted for dark */
+    --shadow: 0 10px 30px rgba(0,0,0,0.35);
+
+  }
+
+  /* hero gradient */
+  .hero {
+    background:
+      radial-gradient(circle at top left, rgba(139,130,255,.15), transparent 35%),
+      linear-gradient(135deg,#0b1020 0%,#0f1729 100%);
+  }
+
+  /* cards / panels */
+  .feature-card,
+  .agency-card,
+  .pricing-card,
+  .report-card,
+  .domain-card,
+  .hero-mockup,
+  .showcase-img,
+  .large-card {
+    background: #11182b;
+    border: 1px solid #23304a;
+  }
+
+  /* navbar */
+  header {
+    background: rgba(17,24,43,.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #23304a;
+  }
+
+  /* inputs */
+  input,
+  textarea,
+  select {
+    background: #0f1729;
+    border: 1px solid #23304a;
+    color: #e7ecf7;
+  }
+
+  /* table borders */
+  .mockup-table th,
+  .mockup-table td {
+    border-bottom: 1px solid #23304a;
+  }
+
+}
+
+/* ================================
+   Dark Mode Visual Enhancements
+   ================================ */
+
+@media (prefers-color-scheme: dark) {
+
+  /* improve card depth */
+  .feature-card,
+  .agency-card,
+  .pricing-card,
+  .report-card,
+  .domain-card {
+    box-shadow: 0 10px 35px rgba(0,0,0,.45);
+  }
+
+  /* smoother hover elevation */
+  .feature-card:hover,
+  .pricing-card:hover,
+  .agency-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px rgba(0,0,0,.6);
+  }
+
+  /* dashboard status chips */
+  .domain-card .health span {
+    background: #0f1729;
+    border: 1px solid #2e3b55;
+  }
+
+  /* primary buttons glow slightly */
+  .btn-primary {
+    box-shadow: 0 8px 30px rgba(139,130,255,.35);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 12px 40px rgba(139,130,255,.45);
+  }
+
+  /* tables and mockups feel softer */
+  .mockup-table th {
+    color: #9fb0d0;
+  }
+
+  /* hero section slightly richer */
+  .hero {
+    background:
+      radial-gradient(circle at 20% 20%, rgba(139,130,255,.18), transparent 40%),
+      radial-gradient(circle at 85% 10%, rgba(255,200,80,.12), transparent 35%),
+      linear-gradient(135deg,#0b1020 0%,#0f1729 100%);
+  }
+
+}
