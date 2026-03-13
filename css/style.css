@@ -146,7 +146,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   align-items: center;
   gap: var(--gap);
-  padding: 6rem 1.5rem 4rem;
+  padding: 6rem 40rem 4rem;
   background: linear-gradient(135deg, #eef2ff 0%, #fdfdfe 100%);
 }
 
